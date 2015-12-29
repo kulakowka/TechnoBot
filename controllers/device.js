@@ -35,7 +35,7 @@ controller.hears('^device status$', 'direct_message,direct_mention,mention', fun
   if (!storage.device) return bot.reply(message, 'Current device is not detected. Use the command `help` for additional information.')
   if (!storage.device.ready_) return bot.reply(message, 'Current device is not ready. Use the command `help` for additional information.')
 
-  bot.reply(message, 'Текущее устройство: `' + storage.device.info_.name + '`')
+  bot.reply(message, 'Current device: `' + storage.device.info_.name + '`')
 })
 
 // device close
