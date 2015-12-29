@@ -1,0 +1,24 @@
+{
+  "name": "technobot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "airplay": "0.0.3",
+    "botkit": "0.0.5",
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "debug": "^2.2.0",
+    
+    "mongodb": "^2.1.2",
+    "mongoose": "^4.3.4",
+    "prompt": "^0.2.14",
+    "promptly": "^0.2.1",
+    "soundcloud-resolve": "^1.0.1"
+  }
+}
