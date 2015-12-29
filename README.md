@@ -1,9 +1,12 @@
 # TechnoBot
 
-Slack-bot to play music from Soundcloud through Airplay.
+Slack-bot and Telegram-bot to play music from Soundcloud through Airplay.
 
-![Screenshot](https://habrastorage.org/files/24c/b35/412/24cb3541219b4ae79ef2dc1bc79f1705.png)
+## [Slack](https://slack.com/) screenshot:
+![Screenshot-slack-bot](https://habrastorage.org/files/24c/b35/412/24cb3541219b4ae79ef2dc1bc79f1705.png)
 
+## [Telegram](https://telegram.org/) screenshot:
+![Screenshot-telegram-bot](https://habrastorage.org/files/cf9/7ad/913/cf97ad9135fa43c38e0b1a8818ee92ee.png)
 
 #### Install:
 
@@ -17,14 +20,14 @@ npm install
 
 In order to start application in `production` mode, run this command in console.
 ```
-SLACK_API_TOKEN="xoxb-17500190674-TRa8hRX7CSoT6mXIJKm5Ub74" SOUNDCLOUD_CLIENT_ID="77504242da580453450a59055278b383" NODE_ENV=production node --harmony index.js
+SLACK_API_TOKEN="xoxb-17500190674-HRaNrRXgGSoT0mXIJKm6Ub74" TELEGRAM_TOKEN="190925138:AAF0R2m_ol3T1a45M2s0dniTXmF5EgSzQi7" SOUNDCLOUD_CLIENT_ID="7wr01242daa87493420a97045298b393" NODE_ENV=production node --harmony index.js
 ```
 
 > ### do not forget to change the keys to the API
 
-Now, open in your browser [http://localhost:3000](http://localhost:3000)
-
 ## Available commands:
+
+`help` - Show help.
 
 `browser start` - Start the process of finding airplay-devices.
 

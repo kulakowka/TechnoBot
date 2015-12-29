@@ -1,8 +1,8 @@
 'use strict'
 
-var storage = require('../storage')
-var browser = require('../initializers/airplay').browser
-var controller = require('../initializers/botkit').controller
+var storage = require('../../storage')
+var browser = require('../../initializers/airplay').browser
+var controller = require('../../initializers/botkit').controller
 
 // device list
 controller.hears('^device list$', 'direct_message,direct_mention,mention', function (bot, message) {

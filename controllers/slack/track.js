@@ -1,9 +1,9 @@
 'use strict'
 
 var assert = require('assert')
-var storage = require('../storage')
-var controller = require('../initializers/botkit').controller
-var clientId = require('../config/soundcloud').clientId
+var storage = require('../../storage')
+var controller = require('../../initializers/botkit').controller
+var clientId = require('../../config/soundcloud').clientId
 var resolve = require('soundcloud-resolve')
 
 let position = 0
@@ -32,7 +32,7 @@ controller.hears('^play', 'direct_message,direct_mention,mention', function (bot
   })
 })
 
-controller.hears('^stop', 'direct_message,direct_mention,mention', function (bot, message) {
+controller.hears('^stop$', 'direct_message,direct_mention,mention', function (bot, message) {
   storage.playing = false
   storage.device.stop()
   bot.reply(message, 'Playing tracks stopped.')

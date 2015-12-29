@@ -2,7 +2,7 @@
 
 var debug = require('debug')('bot:core')
 
-var controller = require('../initializers/botkit').controller
+var controller = require('../../initializers/botkit').controller
 
 // help
 controller.hears('^help$', 'direct_message,direct_mention,mention', function (bot, message) {
