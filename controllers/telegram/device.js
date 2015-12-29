@@ -40,7 +40,8 @@ bot.onText(/^device status$/, function (msg, match) {
   if (!storage.device) return bot.sendMessage(fromId, 'Current device is not detected. Use the command "help" for additional information.')
   if (!storage.device.ready_) return bot.sendMessage(fromId, 'Current device is not ready. Use the command "help" for additional information.')
 
-  bot.sendMessage(fromId, 'Current device: "' + storage.device.info_.name + '"')
+  bot.sendMessage(fromId, 'Current device: ' + storage.device.info_.name + '.\n' +
+                          'Current track: ' + storage.track)
 })
 
 // device close
