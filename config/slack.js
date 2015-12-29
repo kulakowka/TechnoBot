@@ -1,3 +1,3 @@
 module.exports = {
-  apiToken: 'xoxb-17500190674-TRachRXgCSoT0mXIJKm6Ub70'
+  apiToken: process.env.SLACK_API_TOKEN
 }

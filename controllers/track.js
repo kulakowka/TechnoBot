@@ -10,8 +10,8 @@ let position = 0
 
 // Reset devices
 controller.hears('^play', 'direct_message,direct_mention,mention', function (bot, message) {
-  if (!storage.device) return bot.reply(message, 'Текущее устройство не обнаружено. Воспользуйтесь командой `help` для получения дополнительной информации.')
-  if (!storage.device.ready_) return bot.reply(message, 'Текущее устройство не готово. Воспользуйтесь командой `help` для получения дополнительной информации.')
+  if (!storage.device) return bot.reply(message, 'Current device is not detected. Use the command `help` for additional information.')
+  if (!storage.device.ready_) return bot.reply(message, 'Current device is not ready. Use the command `help` for additional information.')
 
   var track = getSoundcloudUrls(message.text).filter(isSoundcloudUrl).shift()
 
@@ -23,10 +23,10 @@ controller.hears('^play', 'direct_message,direct_mention,mention', function (bot
     storage.device.play(body, position, function (res) {
       if (res) {
         storage.playing = true
-        bot.reply(message, 'Начинаю проигрывание трека.')
+        bot.reply(message, 'I start playing a track.')
       } else {
         storage.playing = false
-        bot.reply(message, 'Не удалось запустить проигрывание трека.')
+        bot.reply(message, 'Unable to start playing a track.')
       }
     })
   })
@@ -35,7 +35,7 @@ controller.hears('^play', 'direct_message,direct_mention,mention', function (bot
 controller.hears('^stop', 'direct_message,direct_mention,mention', function (bot, message) {
   storage.playing = false
   storage.device.stop()
-  bot.reply(message, 'Проигрывание трека остановлено')
+  bot.reply(message, 'Playing tracks stopped.')
 })
 
 function getSoundcloudUrls (text) {

@@ -8,12 +8,12 @@ var controller = require('../initializers/botkit').controller
 controller.hears('^browser start$', 'direct_message,direct_mention,mention', function (bot, message) {
   browserStorage.browserStarted = true
   browser.start()
-  bot.reply(message, 'Процесс обнаружения airplay-устройств запущен.')
+  bot.reply(message, 'Device discovery process is started.')
 })
 
 // browser stop
 controller.hears('^browser stop$', 'direct_message,direct_mention,mention', function (bot, message) {
   browserStorage.browserStarted = false
   browser.stop()
-  bot.reply(message, 'Процесс обнаружения airplay-устройств остановлен.')
+  bot.reply(message, 'Device discovery process is stopped.')
 })
