@@ -2,7 +2,7 @@
 
 Slack-bot to play music from Soundcloud through Airplay.
 
-![Screenshot](https://habrastorage.org/files/8e3/df9/638/8e3df96382cd448c82fd8fc77f94fa71.png)
+![Screenshot](https://habrastorage.org/files/24c/b35/412/24cb3541219b4ae79ef2dc1bc79f1705.png)
 
 
 #### Install:
